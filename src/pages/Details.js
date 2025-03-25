@@ -13,11 +13,6 @@ const Details = () => {
 
     if (!resource) return <div>Resource not found</div>;
     
-    const mapCenter = {
-        lat: resource.location.coordinates[1],
-        lng: resource.location.coordinates[0]
-    };
-    
     return (
         <div>
             <Header />

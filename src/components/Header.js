@@ -9,7 +9,7 @@ const Header = ({ hideBorder }) => {
             <a href="/">
                 <img src={logo} alt="Project Lux logo" height="90" width="90" />
             </a>
-            <a href="https://www.theprojectlux.org/" target="_blank" className="header-link">
+            <a href="https://www.theprojectlux.org/" target="_blank" rel="noreferrer" className="header-link">
                 Nonprofit
                 <img src={newtabicon} alt="Open in new tab" height="15" width="15" />
             </a>

@@ -1,13 +1,12 @@
 import {React, useState, useEffect} from 'react';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import ResultCard from '../components/ResultCard';
 import Map from '../components/Map';
 import '../styles/Results.css';
 
 const Results = () => {
-    const navigate = useNavigate();
     const [searchParams] = useSearchParams();
     const [results, setResults] = useState([]);
     const [loading, setLoading] = useState(true);
