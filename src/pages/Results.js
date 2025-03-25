@@ -37,7 +37,7 @@ const Results = () => {
 
                 if (address) {
                     console.log('address', address);
-                    response = await fetch('/api/resources/address', {
+                    response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/resources/address`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -50,10 +50,10 @@ const Results = () => {
                 } else if (cityOrZip) {
                     console.log('cityOrZip', cityOrZip);
                     if (isZipCode(cityOrZip)) {
-                        response = await fetch(`/api/resources/zipCode/${cityOrZip}`);
+                        response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/resources/zipCode/${cityOrZip}`);
                     } else {
                         console.log('city', cityOrZip);
-                        response = await fetch('/api/resources/address', {
+                        response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/resources/address`, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const Results = () => {
                     if (category && category !== 'All') {
                         queryParams.append('category', category);
                     }
-                    response = await fetch(`/api/resources?${queryParams}`);
+                    response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/resources?${queryParams}`);
                 }
 
                 if (!response.ok) {
