@@ -1,0 +1,30 @@
+.header {
+    margin: 0;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.no-border {
+    border-bottom: none !important;
+}
+
+.header-link {
+    font-family: Public Sans;
+    font-size: 15px;
+    color: var(--black);
+}

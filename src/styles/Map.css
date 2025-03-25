@@ -1,0 +1,29 @@
+.map {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.map-container > div {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 15px;
+}
+
+.gm-style-cc {
+    display: none;  /* Hide copyright text */
+}
+
+.info-window-title {
+    padding: 0 20px;
+    font-family: 'Public Sans';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info-window-details {
+    padding: 0 20px;
+    font-family: 'Public Sans';
+    font-size: 14px;
+    font-weight: 400;
+}

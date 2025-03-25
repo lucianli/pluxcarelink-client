@@ -1,0 +1,16 @@
+.resource-icon {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-name {
+    font-family: Cabin;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    text-align: center;
+    width: 80px;
+}

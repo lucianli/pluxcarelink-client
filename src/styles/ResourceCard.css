@@ -1,0 +1,10 @@
+.resource-card {
+    /* ... existing styles ... */
+    transition: all 0.3s ease;
+}
+
+.resource-card.active {
+    border: 2px solid #007AFF;
+    box-shadow: 0 4px 8px rgba(0, 122, 255, 0.1);
+    transform: translateX(4px);
+} 
