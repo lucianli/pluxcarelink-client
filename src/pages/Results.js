@@ -80,6 +80,7 @@ const Results = () => {
                 }
 
                 const data = await response.json();
+                console.log(data);
                 
                 // Filter results by category if needed
                 const filteredData = category === 'All' 
