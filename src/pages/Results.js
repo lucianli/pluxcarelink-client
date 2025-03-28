@@ -35,6 +35,8 @@ const Results = () => {
                 // Simplified check - if first character is a digit, treat as zip code
                 const isZipCode = (str) => /^\d/.test(str);
 
+                console.log('API URL:', `${process.env.REACT_APP_API_BASE_URL}/api/resources/zipCode/${cityOrZip}`);
+                
                 if (address) {
                     console.log('address', address);
                     response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/resources/address`, {
